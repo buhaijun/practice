@@ -1,4 +1,4 @@
-package com.wanxiao.practice.mapper.user;
+package com.wanxiao.practice.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.wanxiao.practice.model.user.UserInfo;
