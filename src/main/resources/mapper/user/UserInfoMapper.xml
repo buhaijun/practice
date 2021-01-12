@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wanxiao.practice.mapper.user.UserInfoMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.wanxiao.practice.model.user.UserInfo">
+        <id column="id" property="id"/>
+        <result column="number" property="number"/>
+        <result column="user_name" property="userName"/>
+        <result column="user_phone" property="userPhone"/>
+        <result column="address" property="address"/>
+        <result column="introduce" property="introduce"/>
+        <result column="head_url" property="headUrl"/>
+        <result column="is_del" property="isDel"/>
+        <result column="user_email" property="userEmail"/>
+        <result column="password" property="password"/>
+        <result column="create_time" property="createTime"/>
+        <result column="login_time" property="loginTime"/>
+        <result column="wx_open_id" property="wxOpenId"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        number,
+        user_name,
+        user_phone,
+        address,
+        introduce,
+        head_url,
+        is_del,
+        user_email,
+        password,
+        create_time,
+        login_time,
+        wx_open_id
+    </sql>
+</mapper>

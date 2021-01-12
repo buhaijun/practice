@@ -6,7 +6,7 @@ spring:
   kafka:
     bootstrap-servers: 192.168.88.10:9092 # 指定kafka server的地址，集群配多个，中间，逗号隔开
     consumer:
-      group-id: wanxiao-kafka-demo-consumer
+      group-id: practice-kafka-demo-consumer
       ## smallest和largest才有效，如果smallest重新0开始读取，如果是largest从logfile的offset读取。一般情况下我们都是设置smallest
       auto-offset-reset: latest
       enable-auto-commit: true # enable.auto.commit:true --> 设置自动提交offset
@@ -22,7 +22,7 @@ spring:
         max-idle: 8 #最大空闲连接
         min-idle: 0 #最小空闲连接
   datasource:
-    url: jdbc:mysql://localhost:3306/commonality?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/practice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
     password: 1QAZ2Wsx
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -37,33 +37,8 @@ spring:
       connection-test-query: SELECT 1
 
 accidPrefix:
-  user: wanxiaoProduct
+  user: practice
 
 customer:
   #超级管理员手机号
-  ADMIN_ID: 13671339636
-
-
-# hbase 集群服务
-hbase:
-  url: 192.168.88.10:2181,192.168.88.11:2181,192.168.88.12:2181
-  port: 2181
-  namespace: qm_test
-  table: car_data_test
-
-# 阿里云 oss 服务
-oss:
-  #Endpoint北京
-  #  endpoint: http://oss-cn-beijing.aliyuncs.com
-  endpoint: http://oss-accelerate.aliyuncs.com
-  #阿里云主账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建RAM账号。
-  accessKeyId: LTAI4FmLFUpxs4q3xsKxphdv
-  accessKeySecret: ZBnGOc7ebvsRnb6uHuaJVtP59syshr
-  bucketName: qimingprod
-  #<yourObjectName>上传文件到OSS时需要指定包含文件后缀在内的完整路径，例如abc/efg/123.jpg。
-  #本地文件存储在local目录，测试环境文件存储在test目录,正式环境文件存储在prod目录
-  objectName: qiming/
-  #oss文件原url
-  fileUrlOriginal: https://qimingprod.oss-cn-beijing.aliyuncs.com/qiming
-  #oss可直接访问文件的url前缀
-  fileUrlPrefix: http://oss.createdpark.cn/qiming
+  ADMIN_ID:
