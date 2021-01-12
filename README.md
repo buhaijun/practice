@@ -1,7 +1,7 @@
 ###   此项目仅供研究学习使用 【持续更新】
 # 工程简介
     此项目是结合国内阿里云、七牛、网易、微信 等三方api，
-    使用spring boot、mybatis、MyBatisPlus、mysql8.1、
+    使用spring boot、mybatis、MyBatisPlus、mysql、
     redis、mq、kafka、api boot 等服务的源码、api
     使用学习项目。
 # 延伸阅读
