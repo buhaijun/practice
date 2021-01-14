@@ -1,5 +1,6 @@
 package com.wanxiao.practice.service.impl;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.oracle.jrockit.jfr.ValueDefinition;
 import com.wanxiao.practice.exception.CustomerException;
@@ -21,6 +22,7 @@ import java.util.List;
  * @since 2021-01-12
  */
 @Service
+@DS("master")
 public class UserInfoServiceImpl implements UserInfoService {
 
 
